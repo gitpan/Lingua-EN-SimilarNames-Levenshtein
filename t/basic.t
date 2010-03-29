@@ -41,7 +41,6 @@ my $expected_list = [
 ];
 is_deeply($similar_people->list_of_similar_name_pairs,
     $expected_list, 'Similar Pairs of People Names (first, last)');
-use Data::Dumper::Concise;
-print Dumper $similar_people->list_of_similar_name_pairs;
+
 done_testing();
 

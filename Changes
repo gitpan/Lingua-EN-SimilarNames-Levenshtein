@@ -1,5 +1,10 @@
 Compare people names looking for similarities in spelling.
 
+0.04    2010 Mars 28
+        Bug Fix:
+        * Remove Data::Dumper::Concise from basic.t as
+        it's not considered a dependency.
+
 0.03    2010 Mars 28
         Improvements:
         * Refine Synopsis
