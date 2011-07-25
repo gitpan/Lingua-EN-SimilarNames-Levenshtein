@@ -7,7 +7,7 @@ use strict;
 use warnings;
 use 5.010;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 =head1 Name
  
@@ -77,7 +77,7 @@ class Person {
       }
 }
 
-=head2 ComparTwoNames
+=head2 CompareTwoNames
 
 This class defines comparator objects.  Given two Person objects, 
 it computes the edit distance between their names.
