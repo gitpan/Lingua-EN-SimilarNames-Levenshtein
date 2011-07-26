@@ -1,5 +1,9 @@
 Compare people names looking for similarities in spelling.
 
+0.08    2011 July 26
+        Test Fix:
+		* Require Test::Leaner for testing.
+
 0.07    2011 July 25
         Test Fix:
         * The last test in basic.t is giving erroneous results at times

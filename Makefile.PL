@@ -15,4 +15,6 @@ requires(
     'Math::Combinatorics'    => 0,
 );
 
+test_requires 'Test::Leaner' => 0;
+
 WriteAll;
