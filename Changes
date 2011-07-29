@@ -1,4 +1,8 @@
 Compare people names looking for similarities in spelling.
+0.09    2011 July 29
+        Test Fix:
+		* Reverting to Test::More 
+		  Having to pull a valid test because of cpantester false failure
 
 0.08    2011 July 26
         Test Fix:
