@@ -47,10 +47,8 @@ foreach my $person_pair (@{$derived_list}) {
     my @person_pair = sort { ($a->[1] cmp $b->[1]) || ($a->[0] cmp $b->[0]) } @{$person_pair};
     push @people_sorted, \@person_pair;
 }
-@people_sorted = sort { ($a->[0][1] cmp $b->[0][1]) || ($a->[0][0] cmp $b->[0][0]) } @people_sorted;
-# cpantest is regularly choking on this test and I don't now why
-# The sort above works reliably for me to get the results to match up with what's expected.
-#is_deeply($expected_list, \@people_sorted, 'People with Similar Names');
+@people_sorted = sort { ($a->[0][1] cmp $b->[0][1]) || ($a->[0][0] cmp $b->[0][0]) || ($a->[1][1] cmp $b->[1][1]) || ($a->[1][0] cmp $b->[1][0]) } @people_sorted;
+is_deeply($expected_list, \@people_sorted, 'People with Similar Names');
 
 done_testing();
 
